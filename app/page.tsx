@@ -59,23 +59,29 @@ export default function Home() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <FeatureCard
-            title="AI Study Planner"
-            description="Generate personalized study schedules using AI."
-            icon={<FaRobot />}
-          />
+         <Link href="/dashboard">
+  <FeatureCard
+    title="AI Study Planner"
+    description="Generate personalized study schedules using AI."
+    icon={<FaRobot />}
+  />
+</Link>
 
-          <FeatureCard
-            title="Quiz Generator"
-            description="Create MCQs and practice questions instantly."
-            icon={<FaClipboardList />}
-          />
+          <Link href="/quiz">
+  <FeatureCard
+    title="Quiz Generator"
+    description="Create MCQs and practice questions instantly."
+    icon={<FaClipboardList />}
+  />
+</Link>
 
-          <FeatureCard
-            title="Progress Tracking"
-            description="Monitor your preparation with analytics dashboard."
-            icon={<FaChartLine />}
-          />
+          <Link href="/dashboard">
+  <FeatureCard
+    title="Progress Tracking"
+    description="Monitor your preparation with analytics dashboard."
+    icon={<FaChartLine />}
+  />
+</Link>
         </div>
       </section>
     </main>
